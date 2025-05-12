@@ -4,8 +4,6 @@
 
 Un juego educativo en Realidad Virtual (VR) desarrollado en Unity, diseñado para inspirar a niñas y jóvenes mujeres a explorar el fascinante mundo STEM (Ciencia, Tecnología, Ingeniería y Matemáticas) y la tecnología a través de historias interactivas y desafíos estimulantes.
 
-![Logo Inspira Estrellas Andinas](image/estrellasAndinas.png)
-
 ---
 
 ## Tabla de Contenidos
