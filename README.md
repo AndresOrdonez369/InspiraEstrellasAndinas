@@ -1,36 +1,38 @@
-# Inspira Estrellas Andinas ???
+# Inspira Estrellas Andinas :sparkles::rocket:
 
-[![Unity Version](https://img.shields.io/badge/Unity-2022.3%2B%20LTS-blueviolet)](https://unity.com/releases/editor/archive) [![XR Interaction Toolkit](https://img.shields.io/badge/XR%20Interaction%20Toolkit-3.1.1-blue)](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@3.1/manual/index.html) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) <!-- ¡Asegúrate de añadir un archivo LICENSE.txt con la licencia MIT! -->
+[![Unity Version](https://img.shields.io/badge/Unity-6-blueviolet)](https://unity.com/releases/editor/archive) [![XR Interaction Toolkit](https://img.shields.io/badge/XR%20Interaction%20Toolkit-3.1.1-blue)](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@3.1/manual/index.html) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Un juego educativo en Realidad Virtual (VR) desarrollado en Unity, diseñado para inspirar a niñas y jóvenes mujeres a explorar el fascinante mundo STEM (Ciencia, Tecnología, Ingeniería y Matemáticas) y la tecnología a través de historias interactivas y desafíos estimulantes.
+
 ![Logo Inspira Estrellas Andinas](image/estrellasandinas.png)
+
 ---
 
 ## Tabla de Contenidos
 
-*   [?? Sobre el Proyecto](#-sobre-el-proyecto)
-    *   [?? Core Gameplay](#-core-gameplay)
-    *   [??? Construido Con](#?-construido-con)
-*   [?? Empezando](#-empezando)
-    *   [?? Prerrequisitos](#-prerrequisitos)
-    *   [?? Instalación](#?-instalación)
-*   [?? Estructura del Proyecto](#-estructura-del-proyecto)
-    *   [?? Carpetas Principales](#-carpetas-principales)
-    *   [?? Escenas Principales](#-escenas-principales)
-*   [?? Paquetes de Unity Clave](#-paquetes-de-unity-clave)
-*   [?? Uso](#-uso)
-*   [?? Contribuciones](#-contribuciones)
-*   [?? Licencia](#-licencia)
-*   [?? Contacto](#-contacto)
-*   [?? Agradecimientos](#-agradecimientos)
+*   [:scroll: Sobre el Proyecto](#scroll-sobre-el-proyecto)
+    *   [:dart: Core Gameplay](#dart-core-gameplay)
+    *   [:hammer_and_wrench:? Construido Con](#hammer_and_wrench?-construido-con)
+*   [:rocket: Empezando](#rocket-empezando)
+    *   [:clipboard: Prerrequisitos](#clipboard-prerrequisitos)
+    *   [:gear:? Instalación](#gear?-instalación)
+*   [:file_folder: Estructura del Proyecto](#file_folder-estructura-del-proyecto)
+    *   [:open_file_folder: Carpetas Principales](#open_file_folder-carpetas-principales)
+    *   [:clapper: Escenas Principales](#clapper-escenas-principales)
+*   [:package: Paquetes de Unity Clave](#package-paquetes-de-unity-clave)
+*   [:video_game: Uso](#video_game-uso)
+*   [:handshake: Contribuciones](#handshake-contribuciones)
+*   [:page_facing_up: Licencia](#page_facing_up-licencia)
+*   [:email: Contacto](#email-contacto)
+*   [:pray: Agradecimientos](#pray-agradecimientos)
 
 ---
 
-## ?? Sobre el Proyecto
+## :scroll: Sobre el Proyecto
 
 **Inspira Estrellas Andinas** sumerge a la jugadora en una aventura narrativa VR donde, como una joven exploradora, descubre entornos virtuales interactivos, conoce las historias de mujeres inspiradoras en campos STEM y resuelve desafíos basados en conceptos científicos y tecnológicos. El objetivo es fomentar la curiosidad, la confianza y el interés por estas áreas de una manera lúdica y significativa.
 
-### ?? Core Gameplay
+### :dart: Core Gameplay
 
 El juego se basa en los siguientes pilares de interacción:
 
@@ -40,25 +42,25 @@ El juego se basa en los siguientes pilares de interacción:
 4.  **Resolver:** Completar desafíos interactivos aplicando conceptos aprendidos (ej. programar distribución de agua).
 5.  **Sentir:** Experimentar la emoción del descubrimiento, la satisfacción de resolver problemas y la inspiración de las historias.
 
-### ??? Construido Con
+### :hammer_and_wrench:? Construido Con
 
 Este proyecto utiliza las siguientes tecnologías y herramientas principales:
 
-*   **[Unity Engine (6000.0.33f1)](https://unity.com/)**: Plataforma de desarrollo principal.
+*   **[Unity Engine (Unity 6)](https://unity.com/)**: Plataforma de desarrollo principal.
 *   **[XR Interaction Toolkit (v3.1.1)](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@3.1/manual/index.html)**: Para gestionar las interacciones VR (agarre, UI, locomoción).
 *   **[Universal Render Pipeline (URP)](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/)**: Para gráficos optimizados y flexibles.
 *   **[OpenXR Plugin](https://docs.unity3d.com/Packages/com.unity.xr.openxr@latest/)**: Para compatibilidad con diversos dispositivos VR (Meta Quest, etc.).
 *   **[Unity Input System](https://docs.unity3d.com/Packages/com.unity.inputsystem@latest/)**: Para la gestión de entradas.
 *   **Git & Git LFS**: Para el control de versiones y manejo de archivos grandes.
-*   _(GDD)_ Software 3D (Blender), Software de Texturizado (Substance Painter/Designer, Krita/Photoshop), DAW (Reaper, Pro Tools, Audacity).
+*   _(Según Diseño General)_ Software 3D (Blender), Software de Texturizado (Substance Painter/Designer, Krita/Photoshop), DAW (Reaper, Pro Tools, Audacity).
 
 ---
 
-## ?? Empezando
+## :rocket: Empezando
 
 Sigue estos pasos para obtener una copia local del proyecto y empezar a trabajar.
 
-### ?? Prerrequisitos
+### :clipboard: Prerrequisitos
 
 Asegúrate de tener instalado el siguiente software:
 
@@ -69,9 +71,9 @@ Asegúrate de tener instalado el siguiente software:
     git lfs install --system
     ```
 *   **Unity Hub:** Para gestionar las instalaciones de Unity Editor. [Descargar Unity Hub](https://unity.com/download)
-*   **Unity Editor (Versión 2022.3 LTS o compatible):** La versión de Unity utilizada para el desarrollo. Se recomienda usar la misma versión o una compatible superior que soporte los paquetes listados. Verifica el archivo `ProjectSettings/ProjectVersion.txt` en el repositorio para la versión exacta utilizada.
+*   **Unity Editor (Unity 6 o compatible):** La versión de Unity utilizada para el desarrollo. Verifica el archivo `ProjectSettings/ProjectVersion.txt` en el repositorio para la versión exacta utilizada si necesitas una específica.
 
-### ?? Instalación
+### :gear:? Instalación
 
 1.  **Clona el repositorio:**
     ```bash
@@ -86,16 +88,16 @@ Asegúrate de tener instalado el siguiente software:
     *   Abre Unity Hub.
     *   Haz clic en "Open" (Abrir) -> "Add project from disk" (Añadir proyecto desde disco).
     *   Selecciona la carpeta `InspiraEstrellasAndinas` que clonaste.
-    *   Asegúrate de seleccionar la versión correcta de Unity Editor (2022.3 LTS o la indicada en `ProjectVersion.txt`).
+    *   Asegúrate de seleccionar la versión correcta de Unity Editor (Unity 6 o la indicada en `ProjectVersion.txt`).
 4.  **Espera a que Unity importe:** La primera vez que abras el proyecto, Unity necesitará importar todos los assets y paquetes. Esto puede tardar un tiempo.
 
 ---
 
-## ?? Estructura del Proyecto
+## :file_folder: Estructura del Proyecto
 
 Una visión general de cómo está organizado el proyecto dentro de la carpeta `Assets`:
 
-### ?? Carpetas Principales
+### :open_file_folder: Carpetas Principales
 
 *   `Assets/Inspira/`: **Carpeta principal del proyecto.** Contiene la lógica, assets específicos y escenas desarrolladas para este juego.
     *   `Animations/`: Archivos de animación y controladores.
@@ -116,7 +118,7 @@ Una visión general de cómo está organizado el proyecto dentro de la carpeta `Ass
 *   `Assets/[Otras Carpetas]/`: Pueden incluir assets descargados de la Asset Store (ej. `Gogo Casual Pack`, `Abandoned World`), paquetes esenciales (`TextMesh Pro`, `XR`), etc.
 *   `Packages/`: Contiene el `manifest.json` y las dependencias de paquetes gestionadas por Unity Package Manager (UPM).
 
-### ?? Escenas Principales
+### :clapper: Escenas Principales
 
 Ubicadas generalmente en `Assets/Inspira/Scenes/`:
 
@@ -130,23 +132,23 @@ Ubicadas generalmente en `Assets/Inspira/Scenes/`:
 
 ---
 
-## ?? Paquetes de Unity Clave
+## :package: Paquetes de Unity Clave
 
 El archivo `Packages/manifest.json` define las dependencias del proyecto. Algunos de los paquetes más importantes son:
 
 *   **`com.unity.xr.interaction.toolkit` (v3.1.1):** Fundamental para toda la interacción VR. Provee componentes para agarrar objetos, interactuar con UI en VR, teletransporte, movimiento continuo, etc.
 *   **`com.unity.xr.openxr` (v1.14.3):** Implementación del estándar OpenXR, permitiendo que la aplicación funcione en una amplia gama de hardware VR compatible con OpenXR (Meta Quest, SteamVR, WMR, etc.).
 *   **`com.unity.inputsystem` (v1.14.0):** Sistema moderno para manejar entradas de diversos dispositivos (mandos VR, teclado, ratón).
-*   **`com.unity.render-pipelines.universal` (v17.1.0):** Define el pipeline de renderizado. URP ofrece un buen balance entre calidad visual y rendimiento para plataformas como VR standalone (Quest).
+*   **`com.unity.render-pipelines.universal` (v17.1.0):** Define el pipeline de renderizado. URP ofrece un buen balance entre calidad visual y rendimiento para plataformas como VR standalone (Quest). *(Nota: Asegúrate de que esta versión sea compatible con Unity 6 o actualízala según sea necesario)*.
 *   **`com.unity.timeline` (v1.8.7):** Usado para crear cinemáticas, secuencias de eventos o animaciones complejas.
 *   **`com.unity.xr.hands` (v1.5.0):** (Si se utiliza) Soporte para seguimiento de manos.
 *   **Módulos de Unity (`com.unity.modules.*`):** Funcionalidades básicas del motor (Audio, Physics, UI, Animation, etc.).
 
 ---
 
-## ?? Uso
+## :video_game: Uso
 
-1.  Abre el proyecto en Unity Editor (versión compatible).
+1.  Abre el proyecto en Unity Editor (versión compatible, Unity 6 recomendada).
 2.  Navega a la carpeta de Escenas (probablemente `Assets/Inspira/Scenes/`).
 3.  Abre la escena inicial, por ejemplo `UI_Inicio.unity`.
 4.  Asegúrate de tener un dispositivo VR compatible conectado y configurado con OpenXR en Unity (`Project Settings` > `XR Plug-in Management`).
@@ -155,7 +157,7 @@ El archivo `Packages/manifest.json` define las dependencias del proyecto. Alguno
 
 ---
 
-## ?? Contribuciones
+## :handshake: Contribuciones
 
 ¡Las contribuciones son bienvenidas! Si deseas mejorar "Inspira Estrellas Andinas", por favor sigue estos pasos:
 
@@ -179,26 +181,22 @@ Por favor, asegúrate de que tu código sigue las convenciones existentes y está d
 
 ---
 
-## ?? Licencia
+## :page_facing_up: Licencia
 
 Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo `LICENSE.txt` para más detalles.
 
-*(**Nota:** Debes crear un archivo llamado `LICENSE.txt` en la raíz de tu proyecto y pegar el texto de la Licencia MIT allí. Puedes encontrarlo fácilmente buscando "MIT License text").*
-
 ---
 
-## ?? Contacto
+## :email: Contacto
 
 Andrés Ordóñez - [@AndresOrdonez369](https://github.com/AndresOrdonez369)
 
-Enlace del Proyecto: [https://github.com/AndresOrdonez369/InspiraEstrellasAndinas](https://github.com/AndresOrdonez369/InspiraEstrellasAndinas)
-
 ---
 
-## ?? Agradecimientos
+## :pray: Agradecimientos
 
 *   A todas las mujeres pioneras en STEM que inspiran este proyecto.
 *   A la comunidad de Unity y XR.
-*   _(Añade aquí otros agradecimientos si lo deseas: assets específicos, tutoriales, colaboradores, etc.)_
+
 
 ---
