@@ -28,8 +28,6 @@ public class SceneConditionalManager_Nave : MonoBehaviour
     public GameObject gameObjectForDifficulty1;
     [Tooltip("GameObject que se activará si la dificultad es 2 o 3. Debe estar INACTIVO por defecto.")]
     public GameObject gameObjectForDifficulty2Or3;
-    [Tooltip("Si se marca, la clave de PlayerPrefs de dificultad se eliminará después de su uso.")]
-    public bool clearDifficultyKeyAfterUse = true;
 
 
     void Awake()
@@ -85,12 +83,7 @@ public class SceneConditionalManager_Nave : MonoBehaviour
                     Debug.LogWarning($"'{this.GetType().Name}': 'Final Cinematic Director' no está asignado.", this);
                 }
 
-                if (clearCinematicKeyAfterUse)
-                {
-                    PlayerPrefs.DeleteKey(playerPrefsKeyCinematic);
-                    PlayerPrefs.Save();
-                    Debug.Log($"'{this.GetType().Name}': Clave '{playerPrefsKeyCinematic}' eliminada.");
-                }
+               
             }
             else
             {
@@ -141,12 +134,7 @@ public class SceneConditionalManager_Nave : MonoBehaviour
                     Debug.Log($"'{this.GetType().Name}': El valor '{difficultyValue}' de la clave '{playerPrefsKeyDifficulty}' no corresponde a 1, 2 o 3. No se activó ningún GameObject por dificultad.");
                 }
 
-                if (clearDifficultyKeyAfterUse)
-                {
-                    PlayerPrefs.DeleteKey(playerPrefsKeyDifficulty);
-                    PlayerPrefs.Save();
-                    Debug.Log($"'{this.GetType().Name}': Clave '{playerPrefsKeyDifficulty}' eliminada.");
-                }
+               
             }
             else
             {

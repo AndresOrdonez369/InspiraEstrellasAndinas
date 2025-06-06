@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables; // Necesario para PlayableDirector
@@ -17,6 +18,9 @@ public class triggerLudica1 : MonoBehaviour
     [SerializeField] private string playerTag = "Player";
 
     [SerializeField] private GameObject partibleFx = null;
+    [Tooltip("Tiempo en segundos para desactivar el messageWaterPump después de que el targetDirector inicie.")]
+    [SerializeField] private float delayParaDesactivarMensaje = 4.0f;
+    [SerializeField] private GameObject messageWaterPump = null;
 
     public List<GameObject> objetosCo2;
 
@@ -66,6 +70,7 @@ public class triggerLudica1 : MonoBehaviour
             preliminaryDirector.stopped -= OnPreliminaryTimelineStopped;
             Debug.Log($"[{gameObject.name}] Desuscrito del evento 'stopped' de Preliminary Director.");
         }
+        StopAllCoroutines();
     }
     // -----------------------------
 
@@ -147,6 +152,25 @@ public class triggerLudica1 : MonoBehaviour
         }
     }
 
+    // Corrutina para desactivar el GameObject después de un retraso
+    private IEnumerator DesactivarMensajeDespuesDeRetraso(float delay)
+    {
+        Debug.Log($"[{gameObject.name}] Esperando {delay} segundos para desactivar messageWaterPump.");
+        yield return new WaitForSeconds(delay);
+
+        if (messageWaterPump != null)
+        {
+            messageWaterPump.SetActive(false);
+            Debug.Log($"[{gameObject.name}] messageWaterPump desactivado.");
+        }
+        else
+        {
+            // Este caso ya se maneja antes de iniciar la corrutina, pero es bueno tenerlo por si acaso.
+            Debug.LogWarning($"[{gameObject.name}] messageWaterPump era nulo cuando se intentó desactivar en la corrutina.");
+        }
+    }
+
+
     // --- Lógica central para verificar AMBAS condiciones ---
     private void CheckConditionsAndPlayTarget()
     {
@@ -162,6 +186,16 @@ public class triggerLudica1 : MonoBehaviour
                 ActivarObjetos();
                 targetDirector.Play();
 
+                // Iniciar la corrutina para desactivar el messageWaterPump
+                if (messageWaterPump != null)
+                {
+                    StartCoroutine(DesactivarMensajeDespuesDeRetraso(delayParaDesactivarMensaje));
+                }
+                else
+                {
+                    Debug.LogWarning($"[{gameObject.name}] messageWaterPump no está asignado, no se puede programar su desactivación.");
+                }
+
 
             }
             else
@@ -169,9 +203,7 @@ public class triggerLudica1 : MonoBehaviour
                 Debug.LogError($"[{gameObject.name}] Target Director es nulo al intentar reproducirlo!");
             }
 
-            // Opcional: Desactivar este componente o el trigger si es un evento único
-            // this.enabled = false;
-            // GetComponent<Collider>().enabled = false;
+         
         }
         else
         {

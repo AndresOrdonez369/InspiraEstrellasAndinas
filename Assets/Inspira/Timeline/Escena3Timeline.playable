@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: 
-  m_Time: 75.63333333333334
+  m_Time: 75.86666666666666
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: 05ce4a92c585c2d47805043ad5960497, type: 2}
@@ -325,8 +325,8 @@ MonoBehaviour:
   m_Name: AnimationPlayableAsset
   m_EditorClassIdentifier: 
   m_Clip: {fileID: -203655887218126122, guid: 54f7241ca78c6b84cb29b24a58f26afa, type: 3}
-  m_Position: {x: -89.19637, y: 4.116399, z: 5.148293}
-  m_EulerAngles: {x: 0, y: 204.102, z: 0}
+  m_Position: {x: -3.3070827, y: -4.475757, z: 20.592676}
+  m_EulerAngles: {x: 0.095, y: 211.04, z: -0.045}
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
   m_RemoveStartOffset: 1
