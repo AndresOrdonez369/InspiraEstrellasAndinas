@@ -1,0 +1,5 @@
+X:/2025/Vlesim/Experiencia2/inspira-g-vr/inspira g vr/.utmp/RelWithDebInfo/193d4127/arm64-v8a/CMakeFiles/edit_cache.dir
+X:/2025/Vlesim/Experiencia2/inspira-g-vr/inspira g vr/.utmp/RelWithDebInfo/193d4127/arm64-v8a/CMakeFiles/rebuild_cache.dir
+X:/2025/Vlesim/Experiencia2/inspira-g-vr/inspira g vr/.utmp/RelWithDebInfo/193d4127/arm64-v8a/GameActivity/CMakeFiles/game.dir
+X:/2025/Vlesim/Experiencia2/inspira-g-vr/inspira g vr/.utmp/RelWithDebInfo/193d4127/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+X:/2025/Vlesim/Experiencia2/inspira-g-vr/inspira g vr/.utmp/RelWithDebInfo/193d4127/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir

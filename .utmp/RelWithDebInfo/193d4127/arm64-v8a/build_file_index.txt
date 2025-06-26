@@ -1,0 +1,2 @@
+X:\2025\Vlesim\Experiencia2\inspira-g-vr\inspira g vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+X:\2025\Vlesim\Experiencia2\inspira-g-vr\inspira g vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt

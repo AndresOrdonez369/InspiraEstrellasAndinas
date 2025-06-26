@@ -1,0 +1,10 @@
+# ninja log v5
+45	1632	7725628962462112	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	156ce8c523d22443
+1	1660	7725628962729041	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	efe5e84a965bbf4d
+57	1716	7725628963265220	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	5b88f43a8b0bd5a8
+70	1837	7725628964174497	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	6ad76905a50997b5
+9	1921	7725628965415170	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	ba8b0e01ed9e640f
+34	1980	7725628966105081	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	279aa81c837421a2
+24	2076	7725628967089864	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	2d4ca84a2bdb2ffe
+16	2209	7725628968422006	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	1caa7b3309ef7f8
+2210	2322	7725628969596428	X:/2025/Vlesim/Experiencia2/inspira-g-vr/inspira g vr/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/193d4127/obj/arm64-v8a/libgame.so	3305754bf5afec6e

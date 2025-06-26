@@ -14,7 +14,7 @@ public class SceneConditionalManager_Nave : MonoBehaviour
     public GameObject gameObjectForFinalCinematic;
     [Tooltip("PlayableDirector de la Timeline de la cinemática final.")]
     public PlayableDirector finalCinematicDirector;
-    [Tooltip("OBjeto a activar al iniciar la cinematica final")]
+    [Tooltip("Objeto a activar al iniciar la cinematica final")] // El nombre original era "OBjeto"
     public GameObject objectMedal;
     [Tooltip("GameObjects a DESACTIVAR si se activa la cinemática final (ej: controles de jugador, UI normal, etc.).")]
     public List<GameObject> gameObjectsToDisableForFinalCinematic;
@@ -39,6 +39,7 @@ public class SceneConditionalManager_Nave : MonoBehaviour
         if (gameObjectForDifficulty2Or3 != null) gameObjectForDifficulty2Or3.SetActive(false);
         // Nota: finalCinematicDirector.gameObject también debería estar inactivo si es un GO separado,
         // o ser parte de gameObjectForFinalCinematic.
+        // objectMedal no se desactivaba aquí en tu código original, así que lo mantengo así.
 
         bool cinematicConditionMet = false;
 
@@ -53,7 +54,12 @@ public class SceneConditionalManager_Nave : MonoBehaviour
                 Debug.Log($"'{this.GetType().Name}': Condición de CINEMÁTICA FINAL CUMPLIDA. Viniendo con la señal '{requiredValueForCinematic}'.");
                 cinematicConditionMet = true;
 
-                objectMedal.SetActive(true);
+                // Tu lógica original para activar la medalla:
+                if (objectMedal != null) // Añadida comprobación de nulidad por seguridad, aunque no estaba en el original explícito. Si objectMedal es null, esto evita un error.
+                {
+                    objectMedal.SetActive(true);
+                }
+
                 // Desactivar elementos que no deben estar durante la cinemática
                 DisableGameObjects(gameObjectsToDisableForFinalCinematic, "cinemática final");
 
@@ -83,7 +89,14 @@ public class SceneConditionalManager_Nave : MonoBehaviour
                     Debug.LogWarning($"'{this.GetType().Name}': 'Final Cinematic Director' no está asignado.", this);
                 }
 
-               
+                // ***** INICIO DE LA ÚNICA ADICIÓN IMPORTANTE *****
+                if (clearCinematicKeyAfterUse)
+                {
+                    PlayerPrefs.DeleteKey(playerPrefsKeyCinematic);
+                    PlayerPrefs.Save(); // Guarda los cambios inmediatamente
+                    Debug.Log($"'{this.GetType().Name}': Clave PlayerPrefs '{playerPrefsKeyCinematic}' eliminada después de su uso.");
+                }
+                // ***** FIN DE LA ÚNICA ADICIÓN IMPORTANTE *****
             }
             else
             {
@@ -133,14 +146,10 @@ public class SceneConditionalManager_Nave : MonoBehaviour
                 {
                     Debug.Log($"'{this.GetType().Name}': El valor '{difficultyValue}' de la clave '{playerPrefsKeyDifficulty}' no corresponde a 1, 2 o 3. No se activó ningún GameObject por dificultad.");
                 }
-
-               
             }
             else
             {
                 Debug.Log($"'{this.GetType().Name}': No se encontró la clave '{playerPrefsKeyDifficulty}'. No se aplicará configuración de dificultad.");
-                // Aquí podrías establecer una dificultad por defecto si lo deseas,
-                // o simplemente dejar que la escena cargue como está configurada por defecto.
             }
         }
         else // cinematicConditionMet fue true
@@ -149,6 +158,7 @@ public class SceneConditionalManager_Nave : MonoBehaviour
         }
     }
 
+    // Mantén tus métodos DisableGameObjects y OnValidate exactamente como los tenías:
     void DisableGameObjects(List<GameObject> gameObjectsToDisable, string reason)
     {
         if (gameObjectsToDisable == null || gameObjectsToDisable.Count == 0)
@@ -181,13 +191,9 @@ public class SceneConditionalManager_Nave : MonoBehaviour
         WarnIfActive(gameObjectForDifficulty1, "GameObject For Difficulty 1");
         WarnIfActive(gameObjectForDifficulty2Or3, "GameObject For Difficulty 2 Or 3");
 
-        // Validar si los PlayableDirectors están asignados si sus GameObjects contenedores lo están
-        if (gameObjectForFinalCinematic != null && finalCinematicDirector == null)
-        {
-            // Podría ser que el director esté en el mismo GO, o en un hijo.
-            // Si esperas que siempre esté, esta advertencia es útil.
-            // Debug.LogWarning("'Final Cinematic Director' no está asignado pero su GameObject sí. ¿Es intencional?", this);
-        }
+        // Tu OnValidate original no incluía WarnIfActive para objectMedal,
+        // ni la validación del PlayableDirector de la forma que lo hice antes.
+        // Lo mantengo como estaba en tu código original.
     }
 
     void WarnIfActive(GameObject go, string fieldName)

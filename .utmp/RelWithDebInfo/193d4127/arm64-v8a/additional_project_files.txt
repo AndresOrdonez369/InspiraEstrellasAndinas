@@ -1,0 +1,17 @@
+X:\2025\Vlesim\Experiencia2\inspira-g-vr\inspira g vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\GAToUnityCallbacks.h
+X:\2025\Vlesim\Experiencia2\inspira-g-vr\inspira g vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\MacroEnd.h
+X:\2025\Vlesim\Experiencia2\inspira-g-vr\inspira g vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\MacroHeaderBegin.h
+X:\2025\Vlesim\Experiencia2\inspira-g-vr\inspira g vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\MacroSourceBegin.h
+X:\2025\Vlesim\Experiencia2\inspira-g-vr\inspira g vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGAApplication.h
+X:\2025\Vlesim\Experiencia2\inspira-g-vr\inspira g vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGAConfiguration.h
+X:\2025\Vlesim\Experiencia2\inspira-g-vr\inspira g vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGADebug.h
+X:\2025\Vlesim\Experiencia2\inspira-g-vr\inspira g vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGAEvents.h
+X:\2025\Vlesim\Experiencia2\inspira-g-vr\inspira g vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGAInput.h
+X:\2025\Vlesim\Experiencia2\inspira-g-vr\inspira g vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGASoftKeyboard.h
+X:\2025\Vlesim\Experiencia2\inspira-g-vr\inspira g vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGASoftKeyboardCallbacks.h
+X:\2025\Vlesim\Experiencia2\inspira-g-vr\inspira g vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGATypes.h
+X:\2025\Vlesim\Experiencia2\inspira-g-vr\inspira g vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGAVersion.h
+X:\2025\Vlesim\Experiencia2\inspira-g-vr\inspira g vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UnityToGACallbacks.h
+X:\2025\Vlesim\Experiencia2\inspira-g-vr\inspira g vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UnityToGAConfigurationCallbacks.h
+X:\2025\Vlesim\Experiencia2\inspira-g-vr\inspira g vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UnityToGAKeyEventCallbacks.h
+X:\2025\Vlesim\Experiencia2\inspira-g-vr\inspira g vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UnityToGAMotionEventCallbacks.h
